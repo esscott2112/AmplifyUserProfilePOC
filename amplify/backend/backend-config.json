@@ -1,0 +1,33 @@
+{
+	"auth": {
+		"profileapp49a4b6f9": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	},
+	"api": {
+		"profileapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authprofileapp49a4b6f9"
+						}
+					},
+					"additionalAuthenticationProviders": []
+				}
+			}
+		}
+	},
+	"storage": {
+		"AmplifyS3Storage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
