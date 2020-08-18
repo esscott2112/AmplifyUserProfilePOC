@@ -5,6 +5,7 @@ export class User {
         public firstName: string,
         public lastName: string,
         public aboutMe: string,
-        public imageUrl: string
+        public imageUrl: string,
+        public answerone: string
     ){}
 }

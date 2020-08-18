@@ -7,6 +7,7 @@ query GetUser($id: ID!) {
     lastName
     bio
     image
+    answerone
     createdAt
     updatedAt
   }
@@ -24,6 +25,32 @@ query ListUsers(
       lastName
       bio
       image
+      answerone
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetSummaryreportone($id: ID!) {
+  getSummaryreportone(id: $id) {
+    id
+    status
+    claimantcount
+    createdAt
+    updatedAt
+  }
+}
+query ListSummaryreportones(
+  $filter: ModelSummaryreportoneFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listSummaryreportones(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      status
+      claimantcount
       createdAt
       updatedAt
     }

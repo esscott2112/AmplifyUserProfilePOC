@@ -7,6 +7,7 @@ subscription OnCreateUser {
     lastName
     bio
     image
+    answerone
     createdAt
     updatedAt
   }
@@ -19,6 +20,7 @@ subscription OnUpdateUser {
     lastName
     bio
     image
+    answerone
     createdAt
     updatedAt
   }
@@ -31,6 +33,34 @@ subscription OnDeleteUser {
     lastName
     bio
     image
+    answerone
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateSummaryreportone {
+  onCreateSummaryreportone {
+    id
+    status
+    claimantcount
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateSummaryreportone {
+  onUpdateSummaryreportone {
+    id
+    status
+    claimantcount
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteSummaryreportone {
+  onDeleteSummaryreportone {
+    id
+    status
+    claimantcount
     createdAt
     updatedAt
   }

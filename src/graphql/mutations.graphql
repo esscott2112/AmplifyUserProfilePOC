@@ -10,6 +10,7 @@ mutation CreateUser(
     lastName
     bio
     image
+    answerone
     createdAt
     updatedAt
   }
@@ -25,6 +26,7 @@ mutation UpdateUser(
     lastName
     bio
     image
+    answerone
     createdAt
     updatedAt
   }
@@ -40,6 +42,43 @@ mutation DeleteUser(
     lastName
     bio
     image
+    answerone
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateSummaryreportone(
+  $input: CreateSummaryreportoneInput!
+  $condition: ModelSummaryreportoneConditionInput
+) {
+  createSummaryreportone(input: $input, condition: $condition) {
+    id
+    status
+    claimantcount
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateSummaryreportone(
+  $input: UpdateSummaryreportoneInput!
+  $condition: ModelSummaryreportoneConditionInput
+) {
+  updateSummaryreportone(input: $input, condition: $condition) {
+    id
+    status
+    claimantcount
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteSummaryreportone(
+  $input: DeleteSummaryreportoneInput!
+  $condition: ModelSummaryreportoneConditionInput
+) {
+  deleteSummaryreportone(input: $input, condition: $condition) {
+    id
+    status
+    claimantcount
     createdAt
     updatedAt
   }

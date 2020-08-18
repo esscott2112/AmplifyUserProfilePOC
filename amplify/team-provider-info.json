@@ -1,33 +1,15 @@
 {
-    "dev": {
+    "escottdev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-profileapp-dev-155124-authRole",
-            "UnauthRoleArn": "arn:aws:iam::620994029232:role/amplify-profileapp-dev-155124-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::620994029232:role/amplify-profileapp-dev-155124-authRole",
+            "AuthRoleName": "amplify-newprofileproject01-escottdev-132055-authRole",
+            "UnauthRoleArn": "arn:aws:iam::620994029232:role/amplify-newprofileproject01-escottdev-132055-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::620994029232:role/amplify-newprofileproject01-escottdev-132055-authRole",
             "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-profileapp-dev-155124-deployment",
-            "UnauthRoleName": "amplify-profileapp-dev-155124-unauthRole",
-            "StackName": "amplify-profileapp-dev-155124",
-            "StackId": "arn:aws:cloudformation:us-west-2:620994029232:stack/amplify-profileapp-dev-155124/a58d3b00-d69c-11ea-93f2-02dae2ce3a64",
-            "AmplifyAppId": "d10lxsnaol0qvz"
-        },
-        "categories": {
-            "auth": {
-                "profileapp49a4b6f9": {}
-            }
-        }
-    },
-    "test": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-profileapp-test-122521-authRole",
-            "UnauthRoleArn": "arn:aws:iam::021025786029:role/amplify-profileapp-test-122521-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::021025786029:role/amplify-profileapp-test-122521-authRole",
-            "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-profileapp-test-122521-deployment",
-            "UnauthRoleName": "amplify-profileapp-test-122521-unauthRole",
-            "StackName": "amplify-profileapp-test-122521",
-            "StackId": "arn:aws:cloudformation:us-west-2:021025786029:stack/amplify-profileapp-test-122521/31e2a790-d812-11ea-ba50-02596f7fb631",
-            "AmplifyAppId": "d2yte6k1qhbqda"
+            "DeploymentBucketName": "amplify-newprofileproject01-escottdev-132055-deployment",
+            "UnauthRoleName": "amplify-newprofileproject01-escottdev-132055-unauthRole",
+            "StackName": "amplify-newprofileproject01-escottdev-132055",
+            "StackId": "arn:aws:cloudformation:us-west-2:620994029232:stack/amplify-newprofileproject01-escottdev-132055/494b9480-de63-11ea-a332-022ad5b1881f",
+            "AmplifyAppId": "d2270f9jo19p7r"
         },
         "categories": {
             "auth": {

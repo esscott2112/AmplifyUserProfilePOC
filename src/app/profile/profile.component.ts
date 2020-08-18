@@ -15,7 +15,8 @@ export class ProfileComponent implements OnInit {
   userName: string;
   showPhoto: boolean;
   userCreated: boolean;
-  user = new User('', '', '', '', '', '');
+  user = new User('', '', '', '', '', '','');
+  answerone: string
 
   constructor(private api: APIService, private router: Router) {}
 
@@ -28,7 +29,7 @@ export class ProfileComponent implements OnInit {
         let result = await this.api.GetUser(this.userId);
         if (!result) {
           this.userCreated = false;
-          this.user = new User('', '', '', '', '', '');
+          this.user = new User('', '', '', '', '', '', '');
         } else {
           this.userCreated = true;
           this.showPhoto = !!result.image;
@@ -38,7 +39,8 @@ export class ProfileComponent implements OnInit {
             result.firstName,
             result.lastName,
             result.bio,
-            result.image
+            result.image,
+            result.answerone
           )
         }
       })
@@ -78,7 +80,8 @@ export class ProfileComponent implements OnInit {
       firstName: this.user.firstName,
       lastName: this.user.lastName,
       bio: this.user.aboutMe,
-      image: this.user.imageUrl
+      image: this.user.imageUrl,
+      answerone: this.user.answerone
     }
 
     await this.api[this.getType()](user);

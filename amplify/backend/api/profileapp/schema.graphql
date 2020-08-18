@@ -5,4 +5,10 @@ type User @model {
   lastName: String
   bio: String
   image: String
+  answerone: String
+}
+type Summaryreportone @model{
+  id: ID!
+  status: String!
+  claimantcount: Int 
 }

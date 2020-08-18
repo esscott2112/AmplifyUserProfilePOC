@@ -69,6 +69,15 @@
           </div>
         </div>
         <div class="form-group row">
+          <label for="answerone" class="col-sm-2 col-form-label">Question One</label>
+          <div class="col-sm-10">
+            <div class="md-form mt-0">
+              <textarea id="answerone" name="answerone" [(ngModel)]="user.answerone" class="form-control md-textarea" length="120"
+                rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
           <div class="col-sm-3">
             <button type="submit" class="btn btn-primary btn-lg" (click)="updateProfile()">Update</button>
           </div>
