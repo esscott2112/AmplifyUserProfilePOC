@@ -7,7 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Do not reuse existing amplify environment
 
 run `npm i @angular/cli@8.3`
+
 run `npm install --save aws-amplify`
+
 run `npm install --save aws-amplify-angular`
 
 run `amplify init`
